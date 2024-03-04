@@ -25,15 +25,15 @@ const Navbar = () => {
     }
   }, [])
   return (
-    <div className = "header fixed w-[100%] bg-mypink text-[white]">
-      <div className= 'header flex w-[80%] justify-between m-auto py- [15px]'>
-        <div className ='name'>
+    <div className = "header font-quicksand fixed w-[100%] h-[6%] bg-pink text-[white]">
+      <div className= 'header flex w-[80%] justify-between m-auto '>
+        <div className ='text-3xl md:py-3 name'>
           <h2>Shyana Shaiskandan</h2>
         </div>
         <div className = 'menu'></div>
 
           <nav>
-            <ul className = 'flex gap-[20px]'>
+            <ul className = 'text-sm flex gap-[20px] md:py-5'>
               <li>
                 <Link href = ''>About</Link>
               </li>

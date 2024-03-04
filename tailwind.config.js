@@ -36,7 +36,8 @@ module.exports = {
         },
 
         colors: {
-            'mypink': '#f2c4ce',
+            'pink': '#f2c4ce',
+            'grey': '#f5f5f5',
         },
       },
     },
