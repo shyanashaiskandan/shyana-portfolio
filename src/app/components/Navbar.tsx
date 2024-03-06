@@ -25,15 +25,12 @@ const Navbar = () => {
     }
   }, [])
   return (
-    <div className = "header font-quicksand fixed w-[100%] py-[1%] bg-pink text-[white]">
-      <div className= 'header flex w-[80%] justify-between items-center m-auto'>
-        <div className ='text-3xl name'>
+    <div className = "header font-quicksand flex w-[100%] h-[7%] bg-pink justify-between m-auto text-[white] items-center">
+        <div className ='text-3xl text-bold name pl-[50px]'>
           <h2>Shyana Shaiskandan</h2>
         </div>
-        <div className = 'menu'></div>
-
           <nav>
-            <ul className = 'text-sm flex gap-[20px] align-middle'>
+            <ul className = 'text-sm flex gap-[30px] align-middle pr-[50px]'>
               <li>
                 <Link href = '/'>About</Link>
               </li>
@@ -51,7 +48,6 @@ const Navbar = () => {
               </li>
             </ul>
           </nav>
-      </div>
     </div>
   )
 }
