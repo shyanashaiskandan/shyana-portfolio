@@ -25,7 +25,7 @@ const Navbar = () => {
     }
   }, [])
   return (
-    <div className = "header font-quicksand fixed w-[100%] py-3 bg-pink text-[white]">
+    <div className = "header font-quicksand fixed w-[100%] py-[1%] bg-pink text-[white]">
       <div className= 'header flex w-[80%] justify-between items-center m-auto'>
         <div className ='text-3xl name'>
           <h2>Shyana Shaiskandan</h2>
@@ -35,19 +35,19 @@ const Navbar = () => {
           <nav>
             <ul className = 'text-sm flex gap-[20px] align-middle'>
               <li>
-                <Link href = ''>About</Link>
+                <Link href = '/'>About</Link>
               </li>
               <li>
-                <Link href = ''>Experience</Link>
+                <Link href = '/experience'>Experience</Link>
               </li>
               <li>
-                <Link href = ''>Projects</Link>
+                <Link href = '/projects'>Projects</Link>
               </li>
               <li>
-                <Link href = ''>Certifications</Link>
+                <Link href = '/certifications'>Certifications</Link>
               </li>  
               <li>
-                <Link href = ''>Contact Me</Link>
+                <Link href = '/contactme'>Contact Me</Link>
               </li>
             </ul>
           </nav>

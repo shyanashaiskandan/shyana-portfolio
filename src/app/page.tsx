@@ -3,8 +3,8 @@ import Navbar from './components/Navbar'
 
 export default function Home() {
   return (
-    <>
-     {/* <Navbar /> */}
-    </>
+    <main>
+      <h2 className="py-20">home</h2>
+    </main>
   );
 }
