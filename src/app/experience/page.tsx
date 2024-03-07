@@ -6,6 +6,8 @@ import Image from 'next/image'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import bmo from "./bmologo.png"
+import manulife from "./manulife logo.png"
+import gov from "./governmentlogo.png"
 
 
 
@@ -13,60 +15,60 @@ import bmo from "./bmologo.png"
 const experience = () => {
   return (
     <>
-    <h1 className="p-10 font-quicksand text-pink text-5xl"><center>Experience</center></h1>
-    <VerticalTimeline>
-  <VerticalTimelineElement visible={true}
-    className="vertical-timeline-element"
-    contentStyle={{background: 'rgb(245, 143, 124)', color: 'white' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgb(245, 143, 124)' }}
-    date="January 2022 - April 2022"
-    dateClassName='text-black font-quicksand'
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    
-  >
-    <center><Image src= {bmo} alt="BMO logo" width={300} /> </center>
-    <h3 className="vertical-timeline-element-title">QA Analyst</h3>
-    <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-    <p>
-      Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    date="2010 - 2011"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    
-  >
-    <h3 className="vertical-timeline-element-title">Art Director</h3>
-    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-    <p>
-      Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    date="2008 - 2010"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    
-  >
-    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-    <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-    <p>
-      User Experience, Visual Design
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    date="2006 - 2008"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    
-  >
-    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-    <p>
-      User Experience, Visual Design
-    </p>
-  </VerticalTimelineElement>
+      <h1 className="p-10 font-quicksand text-pink text-5xl font-bold"><center>Experience</center></h1>
+      <VerticalTimeline>
+        <VerticalTimelineElement visible={true}
+            className="vertical-timeline-element"
+            contentStyle={{background: 'rgb(245, 143, 124)', color: 'white' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(245, 143, 124)' }}
+            date="January 2022 - April 2022"
+            dateClassName='text-black font-quicksand italic'
+            iconStyle={{ background: 'rgb(245, 143, 124)', color: '#4f4f51' }}  
+          >
+          <center><Image src= {bmo} alt="BMO logo" width={225} /> </center>
+          <center><h3 className="font-quicksand text-white text-lg font-bold">QA Analyst</h3></center>
+          <center><h4 className="font-quicksand text-white text-base italic">Bank of Montreal</h4></center>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement visible={true}
+            className="vertical-timeline-element"
+            contentStyle={{background: 'rgb(245, 143, 124)', color: 'white' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(245, 143, 124)' }}
+            date="September 2022 - December 2022"
+            dateClassName='text-black font-quicksand italic'
+            iconStyle={{ background: 'rgb(245, 143, 124)', color: '#4f4f51' }}  
+          >
+          <center><Image src= {bmo} alt="BMO logo" width={225} /> </center>
+          <center><h3 className="font-quicksand text-white text-lg font-bold">Systems and Applications Analyst</h3></center>
+          <center><h4 className="font-quicksand text-white text-base italic">Bank of Montreal</h4></center>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement visible={true}
+            className="vertical-timeline-element"
+            contentStyle={{background: 'rgb(245, 143, 124)', color: 'white' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(245, 143, 124)' }}
+            date="May 2023 - August 2023"
+            dateClassName='text-black font-quicksand italic'
+            iconStyle={{ background: 'rgb(245, 143, 124)', color: '#4f4f51' }}  
+          >
+          <center><Image src= {manulife} alt="manulife logo" width={225} /> </center>
+          <center><h3 className="font-quicksand text-white text-lg font-bold">Salesforce Engineer</h3></center>
+          <center><h4 className="font-quicksand text-white text-base italic">Manulife</h4></center>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement visible={true}
+            className="vertical-timeline-element"
+            contentStyle={{background: 'rgb(245, 143, 124)', color: 'white' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(245, 143, 124)' }}
+            date="January 2024 - April 2024"
+            dateClassName='text-black font-quicksand italic'
+            iconStyle={{ background: 'rgb(245, 143, 124)', color: '#4f4f51' }}  
+          >
+          <center><Image src= {gov} alt="GOV logo" width={225} /> </center>
+          <center><h3 className="font-quicksand text-white text-lg font-bold">Junior Programmer</h3></center>
+          <center><h4 className="font-quicksand text-white text-base italic">Ministry of Finance</h4></center>
+        </VerticalTimelineElement>
+
 </VerticalTimeline>
     </>
   )
