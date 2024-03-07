@@ -1,12 +1,14 @@
 import React from 'react'
+import Timeline from './components/Timeline'
 
 const experience = () => {
   return (
     <>
-<div className="content">
+<div className="p-10 font-quicksand text-pink text-5xl">
   <h1><center>Experience</center></h1>
 </div>
-<div className="timeline">
+<Timeline />
+{/* <div className="timeline"> */}
   <div className="container left">
       <i className="fa fa-code-fork" aria-hidden="true"></i>
     <div className="content">
@@ -44,7 +46,7 @@ const experience = () => {
       <p>The journey never ends. <a href="http://learn.puppet.com">Here are some resources</a> to keep you on your learning path.</p>
     </div>
   </div>
-</div>
+{/* </div> */}
 </>
   )
 }
