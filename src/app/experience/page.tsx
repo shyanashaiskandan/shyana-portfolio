@@ -1,25 +1,31 @@
 "use client"
 import React from 'react'
+import Image from 'next/image'
 // import Timeline from './components/Timeline'
 // import BMO1 from './components/BMO1'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import bmo from "./bmologo.png"
+
 
 
 
 const experience = () => {
   return (
     <>
+    <h1 className="p-10 font-quicksand text-pink text-5xl"><center>Experience</center></h1>
     <VerticalTimeline>
   <VerticalTimelineElement visible={true}
-    className="vertical-timeline-element--work"
-    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-    date="2011 - present"
+    className="vertical-timeline-element"
+    contentStyle={{background: 'rgb(245, 143, 124)', color: 'white' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgb(245, 143, 124)' }}
+    date="January 2022 - April 2022"
+    dateClassName='text-black font-quicksand'
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     
   >
-    <h3 className="vertical-timeline-element-title">Creative Director</h3>
+    <center><Image src= {bmo} alt="BMO logo" width={300} /> </center>
+    <h3 className="vertical-timeline-element-title">QA Analyst</h3>
     <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
     <p>
       Creative Direction, User Experience, Visual Design, Project Management, Team Leading
