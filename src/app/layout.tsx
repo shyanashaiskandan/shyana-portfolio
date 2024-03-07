@@ -18,8 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <div className="w-screen h-screen bg-grey"> 
+      <body className="bg-grey">
+        <div className="w-screen h-screen"> 
         <Navbar/> 
         {children}
         </div>
