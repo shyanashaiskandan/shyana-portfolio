@@ -8,7 +8,6 @@ import 'react-vertical-timeline-component/style.min.css';
 import bmo from "./bmologo.png"
 import manulife from "./manulife logo.png"
 import gov from "./governmentlogo.png"
-import bmo1 from "./bmo.png"
 
 
 
