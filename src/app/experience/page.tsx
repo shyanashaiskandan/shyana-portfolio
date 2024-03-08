@@ -8,6 +8,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import bmo from "./bmologo.png"
 import manulife from "./manulife logo.png"
 import gov from "./governmentlogo.png"
+import bmo1 from "./bmo.png"
 
 
 
@@ -25,7 +26,7 @@ const experience = () => {
             dateClassName='text-black font-quicksand italic'
             iconStyle={{ background: 'rgb(245, 143, 124)', color: '#4f4f51' }}  
           >
-          <center><Image src= {bmo} alt="BMO logo" width={225} /> </center>
+          <div className = "py-3"><center><Image src= {bmo} alt="BMO logo" width={160}/> </center></div>
           <center><h3 className="font-quicksand text-white text-lg font-bold">QA Analyst</h3></center>
           <center><h4 className="font-quicksand text-white text-base italic">Bank of Montreal</h4></center>
         </VerticalTimelineElement>
@@ -38,7 +39,7 @@ const experience = () => {
             dateClassName='text-black font-quicksand italic'
             iconStyle={{ background: 'rgb(245, 143, 124)', color: '#4f4f51' }}  
           >
-          <center><Image src= {bmo} alt="BMO logo" width={225} /> </center>
+          <div className = "py-3"><center><Image src= {bmo} alt="BMO logo" width={160}/> </center></div>
           <center><h3 className="font-quicksand text-white text-lg font-bold">Systems and Applications Analyst</h3></center>
           <center><h4 className="font-quicksand text-white text-base italic">Bank of Montreal</h4></center>
         </VerticalTimelineElement>
@@ -51,7 +52,7 @@ const experience = () => {
             dateClassName='text-black font-quicksand italic'
             iconStyle={{ background: 'rgb(245, 143, 124)', color: '#4f4f51' }}  
           >
-          <center><Image src= {manulife} alt="manulife logo" width={225} /> </center>
+          <div className = "py-5"><center><Image src= {manulife} alt="manulife logo" width={200}/> </center></div>
           <center><h3 className="font-quicksand text-white text-lg font-bold">Salesforce Engineer</h3></center>
           <center><h4 className="font-quicksand text-white text-base italic">Manulife</h4></center>
         </VerticalTimelineElement>
@@ -64,7 +65,7 @@ const experience = () => {
             dateClassName='text-black font-quicksand italic'
             iconStyle={{ background: 'rgb(245, 143, 124)', color: '#4f4f51' }}  
           >
-          <center><Image src= {gov} alt="GOV logo" width={225} /> </center>
+          <center><Image src= {gov} alt="GOV logo" width={210} /> </center>
           <center><h3 className="font-quicksand text-white text-lg font-bold">Junior Programmer</h3></center>
           <center><h4 className="font-quicksand text-white text-base italic">Ministry of Finance</h4></center>
         </VerticalTimelineElement>
