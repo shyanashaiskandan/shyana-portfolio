@@ -46,8 +46,8 @@ const projects = () => {
                   </Image>
               </div>
               <div className= "pl-5 m-auto">
-                <h1 className = "text-3xl mb-2 font-bold">{work.name}</h1>
-                <p className="text-l leading-7 mb-4 text-neutral-600">{work.description}</p>
+                <h1 className = "text-3xl text-orange mb-2 font-bold">{work.name}</h1>
+                <p className="text-l leading-7 mb-4 italic">{work.description}</p>
                 <div>
                   <Link href={work.github} target = "_blank">
                     <div className = "hover:-translate-y-1 transition-transform cursor-pointer">
