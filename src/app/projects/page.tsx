@@ -16,7 +16,14 @@ const works = [
   description: "djksfldkjf",
   image:"./temp",
   github:"https://www.youtube.com",
-}
+},
+{
+  name: "Portfolio Website",
+  description: "djksfldkjf",
+  image:"./temp",
+  github:"https://www.youtube.com",
+},
+
 
 ]
 
@@ -26,11 +33,11 @@ const projects = () => {
     <div>
       <h1 className="p-10 font-quicksand text-pink text-5xl font-bold"><center>Projects</center></h1>
     </div>
-    <div className = "pt-10 grid grid-cols-2"> 
+    <div className = "grid grid-cols-2"> 
         {works.map((work,idx) => {
           return (
           <div key={idx}>
-            <div className = "mx-20 flex justify-center md:flex-row md:space-x-12">
+            <div className = "m-10 flex justify-center md:flex-row md:space-x-12 animate-mybounce">
               <div className = "">
                 <Image 
                   src={temp}
