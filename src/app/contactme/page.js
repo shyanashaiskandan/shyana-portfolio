@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react'
-import {Heading, Container, Button, FormControl, FormLabel, Input, ChakraProvider, Textarea, FormErrorMessage} from "@chakra-ui/react"
+import {Heading, Container, Button, Text, FormControl, FormLabel, Input, ChakraProvider, useToast, Textarea, FormErrorMessage} from "@chakra-ui/react"
 import { sendContactForm } from "../lib/api";
 
 
@@ -10,12 +10,13 @@ const initValues = {
   subject: "",
   message: "", 
 }
-const initState = { values: initValues }
+const initState = { isLoading: false, error: "", values: initValues }
 const contactme = () => {
 
+  const toast = useToast();
   const [state, setState] = useState(initState)
   const[touched, setTouched] = useState({});
-  const {values, isLoading} = state
+  const {values, isLoading, error} = state
   
   const onBlur = ({target}) => setTouched((prev) => ({...prev, [target.name]:true}));
   
@@ -32,14 +33,37 @@ const contactme = () => {
     setState((prev) => ({
       ...prev, 
       isLoading: true
-    }))
-    await sendContactForm(values)
-  }
+    }));
+    try {
+
+      await sendContactForm(values);
+      setTouched({});
+      setState(initState); 
+      toast({
+        title: "Message sent.",
+        status: "success", 
+        duration: "2000", 
+        position: "top",
+      })
+      
+    } catch (error) {
+      setState((prev) => ({
+        ...prev, 
+        isLoading: false,
+        error: error.message,
+      }));
+    }
+   
+  };
   return (
     <ChakraProvider>
     <Container maxWidth="450px" mt='{12}' textAlign="center" fontSize="2xl" p="1em"> 
       <Heading>Contact Me</Heading>
-
+      {error && (
+        <Text color="red.300" my={4} fontSize="xl">
+          {error}
+        </Text>
+      )}
       <FormControl isRequired isInvalid={touched.name && !values.name} mb={5}>
         <FormLabel>Name: </FormLabel>
         <Input 
