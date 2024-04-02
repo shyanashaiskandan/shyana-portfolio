@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react'
 import {Heading, Container, Button, FormControl, FormLabel, Input, ChakraProvider, Textarea, FormErrorMessage} from "@chakra-ui/react"
+import { sendContactForm } from "../lib/api";
 
 
 const initValues = {
@@ -32,6 +33,7 @@ const contactme = () => {
       ...prev, 
       isLoading: true
     }))
+    await sendContactForm(values)
   }
   return (
     <ChakraProvider>
