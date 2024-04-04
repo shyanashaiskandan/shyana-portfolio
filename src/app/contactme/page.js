@@ -57,13 +57,14 @@ const contactme = () => {
   };
   return (
     <ChakraProvider>
-    <Container maxWidth="450px" mt='{12}' textAlign="center" fontSize="2xl" p="1em"> 
-      <Heading>Contact Me</Heading>
+    <Container maxWidth="550px" mt='{12}' textAlign="center" fontSize="2xl" p="1em"> 
+      <h1 className="mt-3 font-quicksand text-pink text-5xl font-bold mb-10">Contact Me</h1>
       {error && (
         <Text color="red.300" my={4} fontSize="xl">
           {error}
         </Text>
       )}
+      <Container className="bg-orange py-5 animate-mybounce">
       <FormControl isRequired isInvalid={touched.name && !values.name} mb={5}>
         <FormLabel>Name: </FormLabel>
         <Input 
@@ -101,7 +102,7 @@ const contactme = () => {
         <FormErrorMessage>Required</FormErrorMessage>
       </FormControl>
 
-      <FormControl isRequired isInvalid={touched.message && !values.name} mb={5}>
+      <FormControl isRequired isInvalid={touched.message && !values.name} mb={'5'}>
         <FormLabel>Message: </FormLabel>
         <Textarea
           type='text'
@@ -113,13 +114,15 @@ const contactme = () => {
         />
         <FormErrorMessage>Required</FormErrorMessage>
       </FormControl>
+      </Container>
+      <div className="pt-5 animate-mybounce">
       <Button
         variant="outline"
         colorScheme="blue"
         isLoading={isLoading}
         disabled={!values.name || !values.email || !values.subject || !values.message}
         onClick = {onSubmit}
-      >Submit</Button>
+      >Submit</Button></div>
     </Container>
     </ChakraProvider>
   )
