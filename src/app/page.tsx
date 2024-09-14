@@ -1,24 +1,67 @@
 "use client"
+import React from "react"
 import Link from 'next/link'
 import Navbar from './components/Navbar'
 import Image from "next/image"
-import headshot from "./headshot.png"
+import headshot from "./self-photo.jpg"
 
 
 export default function Home() {
   return (
-    <main>
-      <div className = "flex flex-row text-center items-center justify-center mt-24 animate-mybounce">
-      <div className = "w-1/2 pr-12">
-        <h1 className = "font-quicksand text-pink text-6xl font-bold pb-12">Hi, I&#39;m Shyana!</h1>
-        <p className = "text-xl bg-orange text-white p-10 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      </div>
-      <div className = "pl-10">
-          <Image src={headshot} alt="" width={500} height={200}/>
-      </div>
+    <section id="home" className = "mx-auto max-w-3xl sn:px-5 md:max-w-6xl">
+      <div className="flex flex-col text-center items-center justify-center animate-mybounce py-16 sm:py-32 md:py-41 md:flex-row md:space-x-4">
+        <div className="md:mt-2 md:w-1/2">
+          <Image src={headshot} 
+            alt="" width={415}
+            height={415}
+            className="rounded-full shadow-2xl border-solid border-4 border-teal-600 hover:border-double hover:border-7"/>
 
+        </div>
+        <div className="md:mt-2 md:w-3/5">
+          <h1 className="mt-6 md:mt-0 my-5 md:text-7xl font-quicksand text-pink text-7xl font-bold">Hi, I&#39;m Shyana!</h1>
+          <p className="text-lg mt-6 mb-2 md:text-2xl">
+            I&#39;m a fourth year Computer Engineering Student at the {" "}
+            <span className="font-semibold text-orange">
+              University of Waterloo.{" "}
+            </span>
+          </p>
+          <p className="text-lg mb-2 md:text-2xl">
+          I'm passionate about technology and constantly curious about the world of software. 
+          </p>
+          <p className="text-lg mb-5 md:text-2xl">
+          I'm currently exploring {" "}
+          <span className="font-semibold text-orange">
+            full-stack development{" "}
+            </span>
+            , learning how to connect frontend and backend systems to build more complete solutions.
+          </p>
+          <p className="text-lg mb-2 md:text-3xl font-semibold text-teal-600">
+          Let's build something amazing together!
+          </p>
+          {/* <Link
+            to="projects"
+            className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            Projects
+          </Link> */}
+        </div>
       </div>
-
-    </main>
-  );
+      <div className="flex flex-row items-center text-center justify-center ">
+        {/* <Link
+          to="about"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
+        </Link> */}
+      </div>
+    </section>
+  )
 }
