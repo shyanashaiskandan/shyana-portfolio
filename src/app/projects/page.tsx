@@ -21,7 +21,7 @@ const works = [
   },
   {
     name: "Portfolio Website",
-    description: "React, Next.JS, Tailwind CSS",
+    description: "React, Next.JS, Tailwind CSS, Chakra UI",
     image: portfolio, // Another imported image
     github: "https://github.com/shyanashaiskandan/shyana-portfolio",
   },
