@@ -15,32 +15,20 @@ import gov from "./governmentlogo.png"
 const experience = () => {
   return (
     <>
-      <h1 className="p-10 font-quicksand text-pink text-5xl font-bold"><center>Experience</center></h1>
+      <h1 className="p-10 font-quicksand text-pink text-6xl font-bold"><center>Experience</center></h1>
       <VerticalTimeline>
-        <VerticalTimelineElement visible={true}
-            className="vertical-timeline-element"
-            contentStyle={{background: 'rgb(245, 143, 124)', color: 'white' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(245, 143, 124)' }}
-            date="January 2022 - April 2022"
-            dateClassName='text-black font-quicksand italic'
-            iconStyle={{ background: 'rgb(245, 143, 124)', color: '#4f4f51' }}  
-          >
-          <div className = "py-3"><center><Image src= {bmo} alt="BMO logo" width={160}/> </center></div>
-          <center><h3 className="font-quicksand text-white text-lg font-bold">QA Analyst</h3></center>
-          <center><h4 className="font-quicksand text-white text-base italic">Bank of Montreal</h4></center>
-        </VerticalTimelineElement>
 
-        <VerticalTimelineElement visible={true}
+      <VerticalTimelineElement visible={true}
             className="vertical-timeline-element"
             contentStyle={{background: 'rgb(245, 143, 124)', color: 'white' }}
             contentArrowStyle={{ borderRight: '7px solid  rgb(245, 143, 124)' }}
-            date="September 2022 - December 2022"
+            date="January 2024 - April 2024"
             dateClassName='text-black font-quicksand italic'
             iconStyle={{ background: 'rgb(245, 143, 124)', color: '#4f4f51' }}  
           >
-          <div className = "py-3"><center><Image src= {bmo} alt="BMO logo" width={160}/> </center></div>
-          <center><h3 className="font-quicksand text-white text-lg font-bold">Systems and Applications Analyst</h3></center>
-          <center><h4 className="font-quicksand text-white text-base italic">Bank of Montreal</h4></center>
+          <center><Image src= {gov} alt="GOV logo" width={210} /> </center>
+          <center><h3 className="font-quicksand text-white text-lg font-bold">Junior Programmer</h3></center>
+          <center><h4 className="font-quicksand text-white text-base italic">Ministry of Finance</h4></center>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement visible={true}
@@ -60,13 +48,26 @@ const experience = () => {
             className="vertical-timeline-element"
             contentStyle={{background: 'rgb(245, 143, 124)', color: 'white' }}
             contentArrowStyle={{ borderRight: '7px solid  rgb(245, 143, 124)' }}
-            date="January 2024 - April 2024"
+            date="September 2022 - December 2022"
             dateClassName='text-black font-quicksand italic'
             iconStyle={{ background: 'rgb(245, 143, 124)', color: '#4f4f51' }}  
           >
-          <center><Image src= {gov} alt="GOV logo" width={210} /> </center>
-          <center><h3 className="font-quicksand text-white text-lg font-bold">Junior Programmer</h3></center>
-          <center><h4 className="font-quicksand text-white text-base italic">Ministry of Finance</h4></center>
+          <div className = "py-3"><center><Image src= {bmo} alt="BMO logo" width={160}/> </center></div>
+          <center><h3 className="font-quicksand text-white text-lg font-bold">Systems and Applications Analyst</h3></center>
+          <center><h4 className="font-quicksand text-white text-base italic">Bank of Montreal</h4></center>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement visible={true}
+            className="vertical-timeline-element"
+            contentStyle={{background: 'rgb(245, 143, 124)', color: 'white' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(245, 143, 124)' }}
+            date="January 2022 - April 2022"
+            dateClassName='text-black font-quicksand italic'
+            iconStyle={{ background: 'rgb(245, 143, 124)', color: '#4f4f51' }}  
+          >
+          <div className = "py-3"><center><Image src= {bmo} alt="BMO logo" width={160}/> </center></div>
+          <center><h3 className="font-quicksand text-white text-lg font-bold">QA Analyst</h3></center>
+          <center><h4 className="font-quicksand text-white text-base italic">Bank of Montreal</h4></center>
         </VerticalTimelineElement>
 
 </VerticalTimeline>
