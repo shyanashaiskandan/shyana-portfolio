@@ -11,19 +11,19 @@ const works = [
     name: "Photo Booth Simulator",
     description: "Raspberry Pi, Python, Flask",
     image: photobooth, // Use the imported image directly
-    github: "https://www.youtube.com",
+    github: "https://github.com/shyanashaiskandan/photobooth_simulator",
   },
   {
     name: "Geography Quiz",
     description: "MongoDB, Express.JS, React, Node.JS, Bootstrap CSS",
     image: geoquiz, // Reuse or import another image
-    github: "https://www.youtube.com",
+    github: "https://github.com/shyanashaiskandan/geography_quiz",
   },
   {
     name: "Portfolio Website",
     description: "React, Next.JS, Tailwind CSS",
     image: portfolio, // Another imported image
-    github: "https://www.youtube.com",
+    github: "https://github.com/shyanashaiskandan/shyana-portfolio",
   },
 
 ]
