@@ -58,18 +58,19 @@ const contactme = () => {
   return (
     <ChakraProvider>
     <Container maxWidth="550px" mt='{12}' textAlign="center" fontSize="2xl" p="1em"> 
-      <h1 className="mt-3 font-quicksand text-pink text-5xl font-bold mb-10">Contact Me</h1>
+      <h1 className="mt-3 font-quicksand text-pink text-6xl font-bold mb-10">Contact Me</h1>
       {error && (
         <Text color="red.300" my={4} fontSize="xl">
           {error}
         </Text>
       )}
-      <Container className="bg-orange py-5 animate-mybounce">
+      <Container className="border-solid border-4 border-teal-600 hover:border-double hover:border-7 py-5 animate-mybounce">
       <FormControl isRequired isInvalid={touched.name && !values.name} mb={5}>
         <FormLabel>Name: </FormLabel>
         <Input 
           type='text'
           name="name"
+          borderColor= "black"
           errorBorderColor = "red.300"
           value = {values.name}
           onChange = {handleChange}
@@ -83,6 +84,7 @@ const contactme = () => {
         <Input 
           type='email'
           name="email"
+          borderColor= "black"
           value = {values.email}
           onChange = {handleChange}
           onBlur = {onBlur}
@@ -90,11 +92,12 @@ const contactme = () => {
         <FormErrorMessage>Required</FormErrorMessage>
       </FormControl>
 
-      <FormControl isRequired isInvalid={touched.subject && !values.name} mb={5}>
+      <FormControl isInvalid={touched.subject && !values.name} mb={5}>
         <FormLabel>Subject: </FormLabel>
         <Input 
           type='text'
           name="subject"
+          borderColor= "black"
           value = {values.subject}
           onChange = {handleChange}
           onBlur = {onBlur}
@@ -108,6 +111,7 @@ const contactme = () => {
           type='text'
           name="message"
           rows = {4}
+          borderColor= "black"
           value = {values.message}
           onChange = {handleChange}
           onBlur = {onBlur}
